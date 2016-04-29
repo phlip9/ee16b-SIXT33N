@@ -80,8 +80,8 @@ void loop()
 
     float sample[64];
     for (int i = 0; i < 64; i++) {
-        re_i = re[2*i];
-        im_i = im[2*i + 1];
+        float re_i = re[2*i];
+        float im_i = im[2*i + 1];
         sample[i] = sqrt(re_i*re_i + im_i*im_i);
     }
 
